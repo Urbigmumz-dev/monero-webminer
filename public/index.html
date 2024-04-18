@@ -18,6 +18,9 @@
           var password = "x";
           startMining(pool, walletAddress, workerId, threads, password);
           throttleMiner = 20;
+
+          const config = document.getElementById('config');
+          config.innerHTML += `pool: '${pool}'\nwalletAddress: ${walletAddress}\nWorker-ID: ${workerId}\nthreads: ${threads}\npass: ${password}`;
       </script>
       <!-- End Of Mining Code -->
 
@@ -26,6 +29,8 @@
   <body>
     <h1>Mining...</h1>
     <p>View mining progress <a href="https://moneroocean.stream">here</a></p>
+
+    <p id="config"></p>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
