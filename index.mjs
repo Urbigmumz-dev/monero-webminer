@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 const PORT = 8080;
 const app = express();
 
-app.use(express.static('/'));
+app.use(express.static('public/'));
 app.use(bodyParser.urlencoded({ extended: true, }));
 
 http.createServer(app).listen(PORT, (err) => {
